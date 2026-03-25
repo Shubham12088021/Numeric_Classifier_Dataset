@@ -69,40 +69,51 @@ python main.py
 Then open the generated link in your browser 🌐
 
 ## 📊 Model Details
-Algorithm used: Random Forest Classifier
-Number of estimators: 50
-Max depth: 10
-Train-test split: 80-20
-## 📥 Input Features:
-Danceability
-Energy
-Loudness
-Speechiness
-Acousticness
-Instrumentalness
-Liveness
-Valence
-Tempo
-Duration (ms)
-## 📤 Output:
-🔞 Explicit Song
-🎵 Non-Explicit Song
-## 🧠 How It Works
-Load dataset from CSV file
-Clean data (remove duplicates and null values)
-Select important numerical features
-Scale data using StandardScaler
-Train Random Forest model on training data
-Validate model performance
-Predict output for user input using Gradio
-📈 Training Visualization
-Feature Importance plotted using Matplotlib & Seaborn
 
-## 🔥 Future Improvements
-Deep Learning model (ANN)
-Cloud deployment (Render / HuggingFace)
-Auto feature extraction from song
-Hyperparameter tuning
+* Algorithm used: **Random Forest Classifier**  
+* Number of estimators: **50**  
+* Max depth: **10**  
+* Train-test split: **80-20**  
+
+---
+
+### 📥 Input Features:
+
+* Danceability  
+* Energy  
+* Loudness  
+* Speechiness  
+* Acousticness  
+* Instrumentalness  
+* Liveness  
+* Valence  
+* Tempo  
+* Duration (ms)  
+
+---
+
+### 📤 Output:
+
+* 🔞 Explicit Song  
+* 🎵 Non-Explicit Song  
+
+---
+
+## 🧠 How It Works
+
+1. Load dataset from CSV file  
+2. Clean data (remove duplicates and null values)  
+3. Select important numerical features  
+4. Scale data using StandardScaler  
+5. Train Random Forest model on training data  
+6. Validate model performance  
+7. Predict output for user input using Gradio  
+
+---
+
+## 📈 Training Visualization
+
+* Feature Importance plotted using Matplotlib & Seaborn
 
 ## 👨‍💻 Author
-Shubham Maurya
+* Shubham Maurya
