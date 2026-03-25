@@ -1,27 +1,27 @@
-🎵 Numeric Song Explicit Classifier (ML Project)
+🎵 Numeric Song Explicit Classifier
 📌 Overview
 
-This project is a Machine Learning based web application that predicts whether a song is Explicit (🔞) or Non-Explicit (🎵) using its audio features.
+This project is a Machine Learning based web application that predicts whether a song is Explicit (🔞) or Non-Explicit (🎵).
 
-It uses a Random Forest Classifier trained on Spotify track features and provides real-time predictions via Gradio UI.
+It uses a Random Forest Classifier trained on Spotify track features and provides real-time predictions through an interactive web interface.
 
 🚀 Features
-
-🎵 Predict if a song is explicit or not
+🎵 Enter song features and get prediction
 🤖 Machine Learning model (Random Forest)
-⚡ Fast predictions with optimized dataset sampling
-📊 Feature importance visualization
+⚡ Fast and efficient predictions
 🌐 Interactive UI using Gradio
-📉 Data preprocessing (cleaning, scaling)
-
+📊 Feature importance visualization
+📁 Works with numerical audio features
 🛠️ Tech Stack
 Python 🐍
-Pandas & NumPy
+Pandas
+NumPy
 Scikit-learn
-Matplotlib & Seaborn
+Matplotlib
+Seaborn
 Gradio (Web Interface)
 📂 Project Structure
-numeric-song-classifier/
+numeric-classifier/
 │
 ├── dataset/
 │   └── tracks_features.csv
@@ -47,11 +47,7 @@ python main.py
 Then open the generated link in your browser 🌐
 
 📊 Model Details
-Algorithm: Random Forest Classifier
-Number of estimators: 50
-Max depth: 10
-Train-test split: 80-20
-📥 Input Features:
+Features used for prediction:
 Danceability
 Energy
 Loudness
@@ -62,32 +58,20 @@ Liveness
 Valence
 Tempo
 Duration
-📤 Output:
-🔞 Explicit Song
-🎵 Non-Explicit Song
+Model used:
+Random Forest Classifier
+50 estimators
+Max depth = 10
 🧠 How It Works
-Load dataset (tracks_features.csv)
-Clean data (remove duplicates & null values)
-Select relevant features
+Load dataset from CSV file
+Remove duplicates and missing values
+Select important numerical features
 Scale data using StandardScaler
 Train Random Forest model
-Evaluate model performance
-Predict using Gradio interface
-📈 Visualization
-Feature Importance plotted using Seaborn
-Helps understand which features impact prediction most
-💾 Model Saving
-model.pkl → trained Random Forest model
-scaler.pkl → fitted scaler
-⚠️ Challenges
-Dataset imbalance (explicit vs non-explicit)
-Feature correlation issues
-Real-world prediction accuracy may vary
-🔥 Future Improvements
-Use Deep Learning (ANN)
-Deploy on cloud (Render / HuggingFace)
-Add song name → auto feature extraction
-Improve accuracy with hyperparameter tuning
+Evaluate performance
+Predict output using Gradio interface
+📈 Training Visualization
+Feature Importance plotted using Matplotlib & Seaborn
 👨‍💻 Author
 
 Shubham Maurya
