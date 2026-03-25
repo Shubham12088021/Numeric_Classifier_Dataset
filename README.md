@@ -89,13 +89,13 @@ Duration (ms)
 🎵 Non-Explicit Song
 🧠 How It Works
 Load dataset from CSV file
-Remove duplicates and missing values
-Select important features
+Clean data (remove duplicates and null values)
+Select important numerical features
 Scale data using StandardScaler
-Train Random Forest model
-Evaluate model performance
-Predict output using Gradio interface
-📈 Visualization
+Train Random Forest model on training data
+Validate model performance
+Predict output for user input using Gradio
+📈 Training Visualization
 Feature Importance plotted using Matplotlib & Seaborn
 ⚠️ Challenges
 Dataset imbalance
