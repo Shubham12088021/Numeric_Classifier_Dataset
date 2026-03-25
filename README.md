@@ -68,12 +68,12 @@ python main.py
 
 Then open the generated link in your browser 🌐
 
-📊 Model Details
+## 📊 Model Details
 Algorithm used: Random Forest Classifier
 Number of estimators: 50
 Max depth: 10
 Train-test split: 80-20
-📥 Input Features:
+## 📥 Input Features:
 Danceability
 Energy
 Loudness
@@ -84,10 +84,10 @@ Liveness
 Valence
 Tempo
 Duration (ms)
-📤 Output:
+## 📤 Output:
 🔞 Explicit Song
 🎵 Non-Explicit Song
-🧠 How It Works
+## 🧠 How It Works
 Load dataset from CSV file
 Clean data (remove duplicates and null values)
 Select important numerical features
@@ -97,15 +97,12 @@ Validate model performance
 Predict output for user input using Gradio
 📈 Training Visualization
 Feature Importance plotted using Matplotlib & Seaborn
-⚠️ Challenges
-Dataset imbalance
-Feature correlation issues
-Real-world prediction may vary
-🔥 Future Improvements
+
+## 🔥 Future Improvements
 Deep Learning model (ANN)
 Cloud deployment (Render / HuggingFace)
 Auto feature extraction from song
 Hyperparameter tuning
-👨‍💻 Author
 
+## 👨‍💻 Author
 Shubham Maurya
